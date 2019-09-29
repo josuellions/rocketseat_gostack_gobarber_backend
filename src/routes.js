@@ -23,6 +23,9 @@ routes.post('/users', UserController.store);
 /*Session de autenticação */
 routes.post('/sessions', SessionController.store);
 
+/**User access test deploy OK */
+routes.get('/', (req, tes) => res.send({'test': 'ok'}))
+
 /*Aplica validação para todas rotes abaixo*/
 routes.use(authMiddleware);
 
