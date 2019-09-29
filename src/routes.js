@@ -18,7 +18,7 @@ const routes = new Router();
 const upload = multer(multerConfig);
 
 /**User access test deploy OK */
-routes.get('/', (req, tes) => res.send('ok'));
+routes.get('/', (req, res) => res.send('ok'));
 
 /*Com uso da class userController*/
 routes.post('/users', UserController.store);
